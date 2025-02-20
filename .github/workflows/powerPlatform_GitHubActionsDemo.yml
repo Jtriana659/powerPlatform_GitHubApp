@@ -1,7 +1,7 @@
 jobs:
  build:
 
-    runs-on: self-hosted   # alternate runner OS is: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Install Power Platform Tools
@@ -10,8 +10,8 @@ jobs:
     - name: Export Solution
       uses: microsoft/powerplatform-actions/export-solution@v1
       with:
-        environment-url: 'https://myenv.crm.dynamics.com'
-        user-name: 'me@myenv.onmicrosoft.com'
+        environment-url: 'https://org77b484e4.crm.dynamics.com/'
+        user-name: 'Triana.jeisson@74153x.onmicrosoft.com'
         password-secret: ${{ secrets.PASSWORD }}
         solution-name: aSolution
         solution-output-file: 'aSolution.zip'
